@@ -34,6 +34,8 @@ public class Post {
         this.createdAt = LocalDateTime.now();
     }
 
-    // TODO 2. 글을 숨기는 메서드 hide()를 만드세요.
-    // 글을 숨긴다는 규칙은 어느 앱에서 쓰든 같으므로 엔티티(core)에 둡니다.
+    // 시스템이 없어도 성립하는 규칙 = 핵심 비즈니스 로직 (엔티티에 둔다)
+    public void hide() {
+        this.hidden = true;
+    }
 }
